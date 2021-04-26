@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>love compatibility</title>
+        <style>
+            .bg{
+                height: 45%;
+                width: 20%;
+                border: 2px solid black;
+                border-radius: 10%;
+                padding-top: 30px;
+                padding-left: 95px;
+                font-family: cursive;
+                background-color: black;
+                color: whitesmoke;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+            
+            
+                Enter your name
+                <br>
+                <br>
+                <input type="text" id="ip1" >
+                <br>
+                <br>
+                Enter your partner's name
+                <br>
+                <br>
+                <input type="text" id="ip2">
+                <br>
+                <br>
+                <button id="bt">calculate</button>
+                <br>
+                
+                <p id="div1">
+            
+            
+               
+            
+        </div>
+        
+        
+        <script type="text/javascript">
+
+        document.getElementById("bt").onclick=function(){
+            var name1=document.getElementById("ip1").value;
+            var name2=document.getElementById("ip2").value;
+            var com=Math.floor(Math.random()* 100);
+            document.getElementById("div1").innerHTML=name1+" & "+name2+" are "+com+"% compatible";
+        }
+
+        </script>
+    </body>
+</html>
